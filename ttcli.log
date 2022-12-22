@@ -1,0 +1,23 @@
+2022-12-22T15:08:17.989+01:00  INFO 35338 --- [main] i.g.w.t.TamingThymeleafCliApplication    : Starting AOT-processed TamingThymeleafCliApplication using Java 17.0.5 with PID 35338 (/opt/homebrew/Cellar/ttcli/0.5.0/libexec/bin/ttcli started by willy in /Users/willy/Documents/workspace/thymeleaf-live-reloading-demo)
+2022-12-22T15:08:17.995+01:00  INFO 35338 --- [main] i.g.w.t.TamingThymeleafCliApplication    : No active profile set, falling back to 1 default profile: "default"
+2022-12-22T15:08:18.313+01:00  INFO 35338 --- [main] i.g.w.t.TamingThymeleafCliApplication    : Started TamingThymeleafCliApplication in 0.543 seconds (process running for 0.632)
+2022-12-22T15:08:18.330+01:00 ERROR 35338 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Failed to execute ApplicationRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:761) ~[ttcli:3.0.0]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:748) ~[ttcli:3.0.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[ttcli:3.0.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302) ~[ttcli:3.0.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291) ~[ttcli:3.0.0]
+	at io.github.wimdeblauwe.ttcli.TamingThymeleafCliApplication.main(TamingThymeleafCliApplication.java:10) ~[ttcli:na]
+Caused by: org.springframework.shell.CommandNotFound: No command found for 'hel'
+	at org.springframework.shell.Shell.evaluate(Shell.java:203) ~[ttcli:3.0.0-M2]
+	at org.springframework.shell.Shell.run(Shell.java:158) ~[ttcli:3.0.0-M2]
+	at org.springframework.shell.jline.NonInteractiveShellRunner.run(NonInteractiveShellRunner.java:104) ~[ttcli:3.0.0-M2]
+	at org.springframework.shell.DefaultShellApplicationRunner.run(DefaultShellApplicationRunner.java:65) ~[ttcli:3.0.0-M2]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:758) ~[ttcli:3.0.0]
+	... 5 common frames omitted
+
+2022-12-22T15:08:20.132+01:00  INFO 35350 --- [main] i.g.w.t.TamingThymeleafCliApplication    : Starting AOT-processed TamingThymeleafCliApplication using Java 17.0.5 with PID 35350 (/opt/homebrew/Cellar/ttcli/0.5.0/libexec/bin/ttcli started by willy in /Users/willy/Documents/workspace/thymeleaf-live-reloading-demo)
+2022-12-22T15:08:20.138+01:00  INFO 35350 --- [main] i.g.w.t.TamingThymeleafCliApplication    : No active profile set, falling back to 1 default profile: "default"
+2022-12-22T15:08:20.460+01:00  INFO 35350 --- [main] i.g.w.t.TamingThymeleafCliApplication    : Started TamingThymeleafCliApplication in 0.552 seconds (process running for 0.642)
